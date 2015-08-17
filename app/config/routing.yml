@@ -1,0 +1,3 @@
+skyrocket_apipage:
+    path:     /index/
+    defaults: { _controller: AppBundle:Demo:index }

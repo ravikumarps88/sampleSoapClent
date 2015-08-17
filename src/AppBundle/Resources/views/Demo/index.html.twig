@@ -1,0 +1,11 @@
+{% if weather.Location is defined %}    
+<h3>Location Name </h3> {{ weather.Location }}
+<h3>Wind </h3> {{ weather.Wind }}
+<h3>SkyConditions</h3> {{ weather.SkyConditions }}
+<h3>Temperature</h3> {{ weather.Temperature }}
+<h3>DewPoint</h3> {{ weather.DewPoint }}
+<h3>RelativeHumidity</h3> {{ weather.RelativeHumidity }}
+<h3>Pressure</h3> {{ weather.Pressure }}
+{% else %}
+    <h3>{{ 'Incorrect Country Name or City Name!!!' }}</h3>
+{% endif %}

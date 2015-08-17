@@ -1,0 +1,9 @@
+parameters:
+    api.weather.class:  AppBundle\Services\SoapClientApi
+    api-url: "http://www.webservicex.net/globalweather.asmx?WSDL"
+   
+services:    
+    api.weather.handler:
+        class:    %api.weather.class%
+        arguments:  
+            - %api-url%
